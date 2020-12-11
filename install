@@ -38,5 +38,5 @@ systemctl start motioneye
 
 #Startup script automatically
 sudo -s
-echo '@reboot /home/pi/launch.sh' >> /var/spool/cron/crontabs/root
+echo '@reboot /home/pi/launch.sh' >> /var/spool/cron/crontabs/root && exit
 reboot
