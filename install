@@ -6,6 +6,11 @@ apt update
 apt upgrade -y
 apt install $PACKAGES -y
 
+#Get scripts
+wget https://raw.githubusercontent.com/Sjoerd305/vakkanjers/main/pir.py
+wget https://raw.githubusercontent.com/Sjoerd305/vakkanjers/main/launch.sh
+chmod +x launch.sh
+
 #Download motion package
 wget https://github.com/Motion-Project/motion/releases/download/release-4.2.2/pi_buster_motion_4.2.2-1_armhf.deb
 dpkg -i pi_buster_motion_4.2.2-1_armhf.deb
