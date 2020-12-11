@@ -23,7 +23,7 @@ mkdir -p /etc/motioneye
 mkdir -p /var/lib/motioneye
 
 #Copy config files into folder
-cp /usr/local/share/motioneye/extra/motioneye.conf.sample /etc/motioneye/motioneye.confapt 
+cp /usr/local/share/motioneye/extra/motioneye.conf.sample /etc/motioneye/motioneye.conf
 
 #Copy config into system services
 cp /usr/local/share/motioneye/extra/motioneye.systemd-unit-local /etc/systemd/system/motioneye.service
