@@ -4,6 +4,7 @@
 PACKAGES="ufw ffmpeg libmariadb3 libpq5 libmicrohttpd12 python-pip python-dev libssl-dev libcurl4-openssl-dev libjpeg-dev libz-dev"
 apt update
 apt upgrade -y
+apt install $PACKAGES -y
 
 #Download motion package
 wget https://github.com/Motion-Project/motion/releases/download/release-4.2.2/pi_buster_motion_4.2.2-1_armhf.deb
