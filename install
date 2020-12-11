@@ -31,13 +31,12 @@ cp /usr/local/share/motioneye/extra/motioneye.systemd-unit-local /etc/systemd/sy
 #Disable firewall
 ufw disable
 
-#Startup script automatically
-sudo -s
-echo '@reboot /home/pi/launch.sh' >> /var/spool/cron/crontabs/root
-exit
-
 #Enable MotionEye services
 systemctl daemon-reload
 systemctl enable motioneye
 systemctl start motioneye
 
+#Startup script automatically
+sudo -s
+echo '@reboot /home/pi/launch.sh' >> /var/spool/cron/crontabs/root
+reboot
