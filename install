@@ -28,6 +28,9 @@ cp /usr/local/share/motioneye/extra/motioneye.conf.sample /etc/motioneye/motione
 #Copy config into system services
 cp /usr/local/share/motioneye/extra/motioneye.systemd-unit-local /etc/systemd/system/motioneye.service
 
+#Disable firewall
+ufw disable
+
 #Startup script automatically
 sudo -s
 echo '@reboot /home/pi/launch.sh' >> /var/spool/cron/crontabs/root
