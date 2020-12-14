@@ -1,5 +1,3 @@
-#Sjoerd van Dijk 11-12-2020
-
 #Update & Install packages
 PACKAGES="ufw ffmpeg libmariadb3 libpq5 libmicrohttpd12 python-pip python-dev libssl-dev libcurl4-openssl-dev libjpeg-dev libz-dev"
 apt update
